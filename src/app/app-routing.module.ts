@@ -1,8 +1,14 @@
+import { ContractObjectsComponent } from './contract-objects/contract-objects.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: ContractObjectsComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
