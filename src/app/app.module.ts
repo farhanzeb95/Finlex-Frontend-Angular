@@ -5,10 +5,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from '@angular/common/http';
 import {FlexLayoutModule} from '@angular/flex-layout';
 // Material Imports
-import {MatListModule} from '@angular/material';
+import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 
@@ -21,6 +21,7 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     AppRoutingModule,
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatListModule,
     MatIconModule,

@@ -1,10 +1,10 @@
 /* Mat Card Style */
 .matCardStyle{
   display: flex;
-  justify-content: space-evenly;
-  box-shadow: azure;
-  width: auto;
-  height: auto;
-  padding: 30px;
+  justify-content: space-between;
+  box-shadow: 1px 2px 2px 1px #91C7C7;
+  padding: 20px;
+  background-color: cornsilk;
+  flex-wrap: wrap;
 }
 

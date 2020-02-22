@@ -15,7 +15,7 @@ export class ContractObjectsComponent implements OnInit {
   contractEndDate: string;
 
   constructor() {
-    this.customerName = "First Customer";
+    this.customerName = "First Customer Name";
     this.customerAddress = "First Customer Address";
     this.totalPrice  = "First Customer Total Price";
     this.brokerName = "First Broker Name";
