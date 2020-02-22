@@ -6,9 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+import {FlexLayoutModule} from '@angular/flex-layout';
 // Material Imports
-import {MatListModule} from '@angular/material/list';
+import {MatListModule} from '@angular/material';
 import {MatIconModule} from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 
@@ -27,7 +27,7 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule
 
   ],
-  providers: [],
+  providers: [ FlexLayoutModule,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

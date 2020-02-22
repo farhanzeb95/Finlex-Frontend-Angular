@@ -1,14 +1,10 @@
 /* Mat Card Style */
 .matCardStyle{
-  align-self: center;
   display: flex;
-  justify-content: center;
-  border: 2px solid red;
+  justify-content: space-evenly;
+  box-shadow: azure;
   width: auto;
   height: auto;
-  padding: 20px;
+  padding: 30px;
 }
 
-.subCard{
-  margin-bottom: 10px;
-}
