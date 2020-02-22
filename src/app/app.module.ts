@@ -1,3 +1,4 @@
+import { ApiService } from './api.service';
 import { ContractObjectsComponent } from './contract-objects/contract-objects.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -28,7 +29,8 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule
 
   ],
-  providers: [ FlexLayoutModule,],
+  providers: [ FlexLayoutModule,
+  ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

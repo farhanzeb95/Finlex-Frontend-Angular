@@ -3,11 +3,16 @@ import { HttpClient, HttpHeaders, HttpErrorResponse, HttpClientModule } from '@a
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
 
-const API_URL ='';
+
 
 @Injectable()
 export class ApiService {
-
+  API_URL ='https://localhost:44378/contract/object';
   constructor( private httpClient: HttpClient) { }
+
+  public getData(){
+    return this.httpClient.get(this.API_URL);
+  }
+
 
 }
