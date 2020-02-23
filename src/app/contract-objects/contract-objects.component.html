@@ -2,147 +2,38 @@
   <div fxLayout="row">
     <h1 style="text-align-last: center; font-weight: bolder;">Contract Objects</h1>
   </div>
-  <div fxLayout="row" fxFlexAlign="center">
-    <!-- Contract 1 Card -->
+  <div fxLayout="row wrap" fxFlexAlign="center">
+    <!-- Main Card -->
     <mat-card class="matCardStyle">
       <div fxFlex="23">
+    <!-- Contract Object Cards -->
         <mat-card style="padding: 20px; box-shadow: 1px 2px 2px 1px #91C7C7; margin-bottom: 10px;">
-          <mat-list>
+          <mat-list *ngFor="let d of data">
             <mat-list-item>
-              <h1 matLine style="font-weight: bolder;"> ContractObjects1 </h1>
+              <h1 matLine style="font-weight: bolder;"> ContractObjects </h1>
               <p matLine>
                 <span style="font-weight: bold;">Customer Name:</span>
-                {{customerName}}
+                {{d.customerName}}
               </p>
               <p matLine>
                 <span style="font-weight: bold;">Customer Address:</span>
-                {{customerAddress}}
+                {{d.customerAddress}}
               </p>
               <p matLine>
                 <span style="font-weight: bold;">Total Price:</span>
-                {{totalPrice}}</p>
+                {{d.totalPrice}}</p>
               <p matLine>
                 <span style="font-weight: bold;">Broker Name:</span>
-                {{brokerName}}</p>
+                {{d.brokerName}}</p>
               <p matLine>
                 <span style="font-weight: bold;">Broker Address:</span>
-                {{brokerAddress}}</p>
+                {{d.brokerAddress}}</p>
               <p matLine>
                 <span style="font-weight: bold;">Contract Start Date</span>
-                {{brokerAddress}}</p>
+                {{d.brokerAddress}}</p>
               <p matLine>
                 <span style="font-weight: bold;">Contract End Date</span>
-                {{contractStartDate}}</p>
-            </mat-list-item>
-          </mat-list>
-        </mat-card>
-      </div>
-
-      <!-- Contract 2 Card -->
-      <div fxFlex="23">
-        <mat-card style="padding: 20px; box-shadow: 1px 2px 2px 1px #91C7C7;  margin-bottom: 10px;">
-          <mat-list>
-            <mat-list-item>
-              <h1 matLine style="font-weight: bolder;"> ContractObject2 </h1>
-              <p matLine>
-                <span style="font-weight: bold;">Customer Name:</span>
-                {{customerName}}
-              </p>
-              <p matLine>
-                <span style="font-weight: bold;">Customer Address:</span>
-                {{customerAddress}}
-              </p>
-              <p matLine>
-                <span style="font-weight: bold;">Total Price:</span>
-                {{totalPrice}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Broker Name:</span>
-                {{brokerName}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Broker Address:</span>
-                {{brokerAddress}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Contract Start Date</span>
-                {{brokerAddress}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Contract End Date</span>
-                {{contractStartDate}}</p>
-            </mat-list-item>
-          </mat-list>
-        </mat-card>
-      </div>
-
-      <!-- Contract 3 Card -->
-      <div fxFlex="23">
-        <mat-card style="padding: 20px; box-shadow: 1px 2px 2px 1px #91C7C7;  margin-bottom: 10px;">
-          <mat-list>
-            <mat-list-item>
-              <h1 matLine style="font-weight: bolder;"> ContractObject3 </h1>
-              <p matLine>
-                <span style="font-weight: bold;">Customer Name:</span>
-                {{customerName}}
-              </p>
-              <p matLine>
-                <span style="font-weight: bold;">Customer Address:</span>
-                {{customerAddress}}
-              </p>
-              <p matLine>
-                <span style="font-weight: bold;">Total Price:</span>
-                {{totalPrice}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Broker Name:</span>
-                {{brokerName}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Broker Address:</span>
-                {{brokerAddress}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Contract Start Date</span>
-                {{brokerAddress}}</p>
-              <p matLine>
-                <span style="font-weight: bold;">Contract End Date</span>
-                {{contractStartDate}}</p>
-            </mat-list-item>
-          </mat-list>
-        </mat-card>
-      </div>
-
-      <!-- Contract 4 Card -->
-      <div fxFlex="23">
-        <mat-card style="padding: 20px; box-shadow: 1px 2px 2px 1px #91C7C7;  margin-bottom: 10px;">
-          <mat-list>
-            <mat-list-item>
-              <h1 matLine style="font-weight: bolder;"> ContractObject4 </h1>
-
-              <p matLine>
-                <span style="font-weight: bold;">Customer Name:</span>
-                {{customerName}}
-              </p>
-
-              <p matLine>
-                <span style="font-weight: bold;">Customer Address:</span>
-                {{customerAddress}}
-              </p>
-
-              <p matLine>
-                <span style="font-weight: bold;">Total Price:</span>
-                {{totalPrice}}</p>
-
-              <p matLine>
-                <span style="font-weight: bold;">Broker Name:</span>
-                {{brokerName}}</p>
-
-              <p matLine>
-                <span style="font-weight: bold;">Broker Address:</span>
-                {{brokerAddress}}</p>
-
-              <p matLine>
-                <span style="font-weight: bold;">Contract Start Date</span>
-                {{brokerAddress}}</p>
-
-              <p matLine>
-                <span style="font-weight: bold;">Contract End Date</span>
-                {{contractStartDate}}</p>
-
+                {{d.contractStartDate}}</p>
             </mat-list-item>
           </mat-list>
         </mat-card>
@@ -151,4 +42,4 @@
   </div>
 </div>
 
-<li *ngFor="let d of data">{{d.customerName}}</li>
+

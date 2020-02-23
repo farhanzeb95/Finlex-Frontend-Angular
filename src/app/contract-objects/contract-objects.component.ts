@@ -34,8 +34,9 @@ export class ContractObjectsComponent implements OnInit {
   }
 
   showData(){
-    this.apiService.getData().subscribe(
-      (data: ApiService) => {
+    this.apiService.getData()
+      .subscribe( data => {
+        this.data = data;
         console.log(data);
 
       });
