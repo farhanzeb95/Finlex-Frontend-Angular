@@ -1,14 +1,13 @@
-<div fxLayout="column" fxLayoutAlign="space-evenly">
-  <div fxLayout="row">
+<div>
+  <div>
     <h1 style="text-align-last: center; font-weight: bolder;">Contract Objects</h1>
   </div>
   <div fxLayout="row" fxLayoutAlign="center">
     <!-- Main Card -->
-    <mat-card fxLayout="row" fxLayoutAlign="center" class="mainCardStyle">
-      <div fxFlexAlign.xs="center" class="contractObjDiv">
+    <mat-card class="mainCardStyle">
+      <div class="contractObjDiv">
     <!-- Contract Object Cards -->
-        <mat-card *ngFor="let d of data"  class="contractObjCardStyle">
-          <div fxFlex="23">
+        <mat-card class="contractObjCardStyle" *ngFor="let d of data">
           <mat-list>
             <mat-list-item>
               <h1 matLine style="font-weight: bolder;"> ContractObjects </h1>
@@ -37,7 +36,6 @@
                 {{d.contractEndDate}}</p>
             </mat-list-item>
           </mat-list>
-        </div>
         </mat-card>
       </div>
     </mat-card>

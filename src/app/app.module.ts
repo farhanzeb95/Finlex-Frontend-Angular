@@ -1,4 +1,4 @@
-import { ApiService } from './api.service';
+import { ApiService } from './services/api.service';
 import { ContractObjectsComponent } from './contract-objects/contract-objects.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';

@@ -1,4 +1,4 @@
-import { ApiService } from './../api.service';
+import { ApiService } from '../services/api.service';
 import { Component, OnInit } from '@angular/core';
 import { throwToolbarMixedModesError } from '@angular/material';
 
@@ -8,24 +8,9 @@ import { throwToolbarMixedModesError } from '@angular/material';
   styleUrls: ['./contract-objects.component.css']
 })
 export class ContractObjectsComponent implements OnInit {
-  customerName: string;
-  customerAddress: string;
-  totalPrice: string;
-  brokerName: string;
-  brokerAddress: string;
-  contractStartDate: string;
-  contractEndDate: string;
-  data: any;
 
-
+data: any;
   constructor(private apiService: ApiService) {
-    // this.customerName = "First Customer Name";
-    // this.customerAddress = "First Customer Address";
-    // this.totalPrice  = "First Customer Total Price";
-    // this.brokerName = "First Broker Name";
-    // this.brokerAddress = "First Broker Address";
-    // this.contractStartDate = "First Customer Contract Start Date";
-    // this.contractEndDate = "First Customer Contract End Date"
    }
 
   ngOnInit() {

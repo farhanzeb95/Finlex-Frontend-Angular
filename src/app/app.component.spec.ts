@@ -33,3 +33,5 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span').textContent).toContain('FinlexTask app is running!');
   });
 });
+
+
